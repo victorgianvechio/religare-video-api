@@ -32,6 +32,12 @@ gera arquivo .env
 
 obs: também gera uma **APP_SECRET** de 128 bytes que é utilizado para descriptografar o token. Sempre que o **APP_SECRET** for trocado deve gerar um novo token.
 
+## Test
+
+**yarn test**
+
+Executa os testes escritos na pasta **test**.
+
 ## Token
 
 **yarn token [days]**
@@ -74,9 +80,9 @@ Necessário instalar o **IIS Node** e também o **NVM** (Node Version Manager)
 -   **nvm install v12.16.3** - instala a versão do node utilizada na API
 -   **nvm use 12.16.3** - seta a versão a ser utilizada
 
-**dar permissão para o IIS acessar a pasta do NVM na versão 12.16.3**
+**atribuir permissão para o IIS acessar a pasta do NVM na versão 12.16.3**
 
-**dar permissão para o IIS acessar a pasta da aplicação**
+**atribuir permissão para o IIS acessar a pasta da aplicação**
 
 # Logs
 
