@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DigitalOcean Spaces</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <h1>DigitalOcean Spaces</h1>
+
+  <p>Por favor selecione um arquivo para enviar em seu DigitalOcean Space.</p>
+
+  <form method="post" enctype="multipart/form-data" action="/api/v1/upload">
+    <label for="file">Upload</label>
+    <input type="file" name="upload">
+    <input type="submit" class="button">
+  </form>
+
+</body>
+
+</html>
