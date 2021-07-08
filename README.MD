@@ -1,12 +1,12 @@
 # Religare Vídeo API
 
-Instalar as dependências com yarn
+Instalar as dependências com **yarn**
 
 # Ambiente de Desenvolvimento
 
 Após instalar as dependências, executar **yarn env** para criar o arquivo **.env**
 
-Confgurar as variáveis da DigitalOcean Space
+Confgurar as variáveis da DigitalOcean Space no **.env**
 
 Após configurar o .env startar a aplicação com **yarn dev**
 
@@ -18,11 +18,9 @@ http://127.0.0.1:8080/
 
 Endpoint: [POST] http://127.0.0.1:8080/api/v1/upload
 
-body:
 Multipart Form {
   'upload': file
 }
-
 
 # Comandos
 
@@ -38,7 +36,7 @@ starta a aplicação em modo de desenvolvimento com live reload (códigos da pas
 
 **yarn start**
 
-starta a aplicação a partir da pasta **build**, permitindo testar a aplicação como se estivesse em produção.
+starta a aplicação a partir da pasta **build**, permitindo testar como ambiente de produção.
 
 ## Env
 
@@ -60,7 +58,7 @@ Executa os testes escritos na pasta **test**.
 
 gera o **Bearer Token** que deve ser passado no header das requisições feitas para a API. É utilizado o **APP_SECRET** do arquivo .env para criar o token.
 
-Pode passar como parametro o número de dias. Se nenhum parâmetro for passado o token não vai ira ter validade.
+Pode passar como parametro o número de dias. Se nenhum parâmetro for passado o token não tera validade.
 
 Ex:
 -    **yarn token 7d** - gera um token que expira em 7 dias.
