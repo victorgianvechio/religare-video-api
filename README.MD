@@ -1,12 +1,28 @@
 # Religare Vídeo API
 
-Verificar as versões abaixo. Tanto para ambiente de desenvolvimento quanto produção:
+Instalar as dependências com yarn
 
--   **node -v** - 12.16.3
--   **npm -v** - 6.14.4
--   **yarn -v** - 1.22.5
+# Ambiente de Desenvolvimento
 
-Recomendado instalar e utilizar o **Yarn**.
+Após instalar as dependências, executar **yarn env** para criar o arquivo **.env**
+
+Confgurar as variáveis da DigitalOcean Space
+
+Após configurar o .env startar a aplicação com **yarn dev**
+
+## Aplicação web client
+
+http://127.0.0.1:8080/
+
+## API
+
+Endpoint: [POST] http://127.0.0.1:8080/api/v1/upload
+
+body:
+Multipart Form {
+  'upload': file
+}
+
 
 # Comandos
 
@@ -70,7 +86,11 @@ Apenas a pasta **src** é gerada no build. Abaixo a lista de arquivos e pastas o
 -    **web.config** - arquivo de configuração do aplicativo no IIS
 -    **yarn.lock** - arquivo de segurança das dependências
 
-# Servidor - IIS
+# Ambiente de Produção Servidor - IIS
+
+-   **node -v** >= 12.16.3
+-   **npm -v** >= 6.14.4
+-   **yarn -v** >= 1.22.5
 
 Necessário instalar o **IIS Node** e também o **NVM** (Node Version Manager)
 
